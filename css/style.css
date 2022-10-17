@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: fixed url(/assets/wallpaper.jpg) repeat;
+}
+
+.animation-success {
+  animation: moveText 4s infinite;
+}
+@keyframes moveText {
+  from {
+    font-size: 14px;
+  }
+  to {
+    font-size: 20px;
+  }
+}
+.btn-green {
+  background-color: rgb(0, 184, 230);
+  color: white;
+  width: 382px;
+  height: 37px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.btn {
+  width: 382px;
+  height: 37px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+table,
+th {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-collapse: collapse;
+}
+
+tr:hover {
+  background: #f5f5f5;
+}
+
+thead tr th {
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.animate-img {
+  animation: biggerImage 4s infinite;
+}
+
+@keyframes biggerImage {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 90px;
+  }
+}
+
+#btnSave:hover,
+#btnClean:hover {
+  animation: changeColor 3s infinite;
+}
+
+@keyframes changeColor {
+  from {
+    background-color: aqua;
+  }
+  to {
+    background-color: blueviolet;
+  }
+}
+
+.modal-body {
+  height: 100vh;
+}
+
+#spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
